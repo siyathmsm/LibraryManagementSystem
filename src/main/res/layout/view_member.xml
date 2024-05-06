@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout with horizontal orientation to group the EditText and Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:id="@+id/search_input_layout">
+
+        <!-- EditText for entering the Card No -->
+        <EditText
+            android:id="@+id/member_id_search_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:hint="Enter Card Number"
+            android:padding="8dp" />
+
+        <!-- Button for searching the member -->
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+    </LinearLayout>
+
+    <!-- Button to view all members -->
+    <Button
+        android:id="@+id/view_all_members_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_input_layout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="View All Members"
+        tools:ignore="NotSibling" />
+
+    <!-- TextView to display search results -->
+    <TextView
+        android:id="@+id/search_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_all_members_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:padding="8dp" />
+</RelativeLayout>
